@@ -1,0 +1,269 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Grid CSS */
+#heroGrid {
+  margin: 0px 0%;
+  display: grid;
+  min-height: 800px;
+  height: 70vh;
+  grid-template-rows: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 
+  "featuredProduct secondaryProduct"; 
+}
+#featuredProduct {
+  grid-area: featuredProduct;
+  background-color: #D98555;
+}
+#secondaryProduct {
+  grid-area: secondaryProduct;
+  background-image: url(../images/gulp-coffee-closeup.jpg);
+}
+
+.heroGridArea {
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+#headline {
+  background-color: rgba(255,255,255,0.8);
+  position: absolute;
+  right: -60px;
+  padding: 40px;
+  max-width: 600px;
+  z-index: 100;
+}
+
+/* Category Grid CSS */
+#categoryGrid {
+  margin: 0px 0%;
+  display: grid;
+  min-height: 500px;
+  background-color: #59331D;
+  grid-template-rows: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+  "coffee colorfield";
+}
+#coffee {
+  grid-area: coffee;
+  margin-top:  50px;
+  margin-left:  50px;
+  margin-bottom:  50px;
+  background-image: url(../images/gulp-pouring-coffee-horizontal.jpg);
+}
+#colorfield {
+  grid-area: colorfield;
+  border: 20px solid #D98555;
+  background-color: rgba(255,255,255,0.8);
+  position: flex;
+  right: 0px;
+  margin-top:  50px;
+  margin-right:  50px;
+  margin-bottom:  50px;
+  padding: 40px 40px 40px 50px;
+  max-width: 100%;
+  z-index: 100;
+}
+.categoryGridArea {
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+#categoryGrid2 {
+  background-color: #59331D;
+  margin: 0px 0%;
+  min-height: 300 px;
+  padding: 0px 20px 0px 20px;
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "olderCouple coffeebeans youngWoman"
+  ;
+}
+#olderCouple {
+  grid-area: olderCouple;
+  background-image: url(../images/gulp-couple-talking.jpg);
+}
+#coffeebeans {
+  grid-area: coffeebeans;
+  background-image: url(../images/gulp-coffee-beans.jpg);
+}
+#youngWoman {
+  grid-area: youngWoman;
+  background-image: url(../images/gulp-drinking-coffee.jpg);
+}
+
+.categoryGridArea2 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+/* Navigation CSS */
+/* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  margin-left: 0px;
+  background-color: #082B59;
+  color: #F2F2F2;
+}
+#navBar img{
+  margin-left: 30px;
+}
+
+#navBar h1 {
+  width: 25%;
+  font-weight: 500;
+}
+#navigation {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#navigation p {
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;  
+}
+
+#navigation p:hover {
+  color: #D98555;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Typography CSS */
+
+h1 {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 20px 0px;
+  color: #082B59;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0px 0px;
+  color: #082B59;
+}
+
+#headline a {
+  color: #082B59;
+  background-color: transparent;
+  text-decoration: underline;
+}
+#headline a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+#headline a:hover {
+  color: #D98555;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#headline a.active {
+  color: #082B59;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 23px;
+}
+
+#CTA {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 40px;
+  color: #082B59;
+}
+#button {
+  display: inline-block;
+  background-color: #082B59;
+  margin-top: 20px;
+  padding: 15px;
+  width: 150px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+#buttonContainer { 
+  text-align: center;
+}
+
+/* Footer CSS */
+#footer {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  background-color: #082B59;
+  color: #F2F2F2;
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-left: 20px;
+}
+
+#footertext {
+  color: #F2f2f2;
+}
+#footertext p {
+  font-size: 14px;
+}
+#footertext a {
+  font-size: 18px;
+}
+
+#footertext a:link {
+  color: #F2F2F2;
+  background-color: transparent;
+  text-decoration: none;
+}
+#footertext a:visited {
+  color: #F2F2F2;
+  background-color: transparent;
+  text-decoration: none;
+}
+#footertext a:hover {
+  color: #D98555;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+}
+.icons img {
+  margin: 15px;
+  cursor: pointer;
+}
